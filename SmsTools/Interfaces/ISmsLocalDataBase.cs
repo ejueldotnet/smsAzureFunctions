@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace SmsTools.Interfaces
 {
-    public interface ISmsReceive
+    internal interface ISmsLocalDataBase
     {
-        public SmsMessage GetSms_ById(string id);
-        public bool ProcessIncomingMessage(SmsMessage message);
+        public ISmsMessage GetMessage(string id);
+        public bool LogMessage(ISmsMessage message);
     }
 }

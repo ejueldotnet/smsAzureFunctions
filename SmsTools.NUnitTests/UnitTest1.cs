@@ -1,18 +1,21 @@
 using NUnit.Framework;
+using SmsTools.Interfaces;
+using System;
 
 namespace SmsTools.NUnitTests
 {
     public class Tests
     {
-        [SetUp]
-        public void Setup()
+        [OneTimeSetUp]
+        public void FirstTimeSetup()
         {
+            LocalSettings.Setup();
         }
 
         [Test]
         public void Test1()
-        {
-            Assert.Pass();
+        { 
+            Assert.IsTrue(Environment.GetEnvironmentVariable("MyName") =="Zeke");
         }
     }
 }

@@ -6,9 +6,7 @@ using System.Threading.Tasks;
 
 namespace SmsTools.Interfaces
 {
-    public interface ISmsReceive
+    public interface ISmsSendAndReceive : ISmsSend, ISmsReceive
     {
-        public SmsMessage GetSms_ById(string id);
-        public bool ProcessIncomingMessage(SmsMessage message);
     }
 }
