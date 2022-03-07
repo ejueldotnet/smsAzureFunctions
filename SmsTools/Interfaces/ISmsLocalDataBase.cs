@@ -8,7 +8,9 @@ namespace SmsTools.Interfaces
 {
     internal interface ISmsLocalDataBase
     {
-        public ISmsMessage GetMessage(string id);
+        public ISmsMessage GetMessage_ById(string id);
+        public ISmsMessage GetMessage_BySender(string sender);
+        public ISmsMessage GetMessage_ByRecipient(string sender);
         public bool LogMessage(ISmsMessage message);
     }
 }

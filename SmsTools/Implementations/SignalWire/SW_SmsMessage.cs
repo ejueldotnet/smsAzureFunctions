@@ -1,11 +1,7 @@
 ﻿using SignalWire.Relay.Messaging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using SmsTools.Interfaces;
 
-namespace SmsTools.Interfaces
+namespace SmsTools.Implementations.SignalWire
 {
     public class SW_SmsMessage : ISmsMessage
     {

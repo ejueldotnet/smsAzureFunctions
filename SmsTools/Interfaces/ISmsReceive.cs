@@ -8,7 +8,6 @@ namespace SmsTools.Interfaces
 {
     public interface ISmsReceive
     {
-        public SmsMessage GetSms_ById(string id);
-        public bool ProcessIncomingMessage(SmsMessage message);
+        public bool ProcessIncomingMessage(ISmsMessage message);
     }
 }
